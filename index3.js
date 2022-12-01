@@ -210,10 +210,14 @@ const response5 = await employeeData.updateMany({
                 "salary":"65000"
             }          
         })
-const response6 = await employeeData.deleteMany({  "lastCompany" : "Y" })
-    } catch (error) {
-        console.log(error);
-    }
-}
+        console.log(response5);
 
+const response6 = await employeeData.deleteMany({  "lastCompany" : "Y" })
+console.log(response6);
+
+} catch (error) {
+    console.log(error);
+}
+console.log("////////");
+}
 main();
